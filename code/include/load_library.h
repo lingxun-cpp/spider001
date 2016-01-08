@@ -10,7 +10,6 @@
 
 #include <string>
 #include <ctime>
-using namespace std;
 
 namespace Example
 {
@@ -19,7 +18,7 @@ namespace Example
     {
     public:
         // 构造
-        KLoadLibrary(const char* strLibFileName, string& sError) : m_strLibFileName(strLibFileName)
+        KLoadLibrary(const char* strLibFileName, std::string& sError) : m_strLibFileName(strLibFileName)
         {
             sError = "";
             m_strLibFileName += m_LibExtName;
@@ -40,9 +39,9 @@ namespace Example
             #endif
         }
         // 加载动态库
-        string LoadLib(void)
+        std::string LoadLib(void)
         {
-            string sError = "";
+            std::string sError = "";
             #ifdef WIN32    // Windows环境
             if (0 == m_lib_handle)
             {
@@ -62,7 +61,7 @@ namespace Example
         }
         // 加载库函数
         template<typename _Func>
-        inline _Func GetLibFunc(const char* strFuncName, string& sError)
+        inline _Func GetLibFunc(const char* strFuncName, std::string& sError)
         {
             sError = LoadLib();
             _Func _f = (_Func)GetLibFunc(strFuncName);
@@ -74,7 +73,7 @@ namespace Example
         template<typename _Func>
         inline _Func GetLibFunc(const char* strFuncName)
         {
-            string sError;
+            std::string sError;
             return this->GetLibFunc<_Func>(strFuncName, sError);
         }
         void* GetLibFunc(const char* strFuncName)
@@ -103,7 +102,7 @@ namespace Example
 		// 库扩展名
         const char* m_LibExtName = c_LoadOutLibExtName;
         // 库文件全名
-        string m_strLibFileName = "";
+        std::string m_strLibFileName = "";
         // 最近访问时间
         time_t m_lastTime = std::time(0);
     };

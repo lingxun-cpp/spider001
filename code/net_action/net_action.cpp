@@ -4,7 +4,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 extern "C"
 {
-	INetAction& GetWorkInf(void)
+	INetAction& GetWorkInf(const char*)
 	{
 	    static CNetAction s_Inf;
 	    return s_Inf;
@@ -12,24 +12,24 @@ extern "C"
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-// CNetActionç±»
-// è¯·æ±‚
+// CNetActionÀà
+// ÇëÇó
 const char* CNetAction::SyncRequest(int& resCount, const char* domain, const char* request, int port)
 {
     const char* pResult = nullptr;
     try
     {
-        // é“¾æ¥åˆ°æœåŠ¡å™¨
+        // Á´½Óµ½·şÎñÆ÷
         asio::ip::tcp::resolver resolver(m_io_serv);
         asio::ip::tcp::resolver::query query(domain, lexical_cast<string>(port));
         asio::ip::tcp::resolver::iterator endpoint_iterator = resolver.resolve(query);
         asio::ip::tcp::socket socket(m_io_serv);
         asio::connect(socket, endpoint_iterator);
 
-        // è¯·æ±‚
+        // ÇëÇó
         socket.write_some(asio::buffer(request, strlen(request)));
 
-        // è¿”å›
+        // ·µ»Ø
         m_SyncHttpGet.clear();
         system::error_code error;
         char buf[1025] = {0};

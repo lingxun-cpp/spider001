@@ -4,7 +4,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 extern "C"
 {
-	IUtilAction& GetWorkInf(void)
+	IUtilAction& GetWorkInf(const char*)
 	{
 	    static CUtilAction s_Inf;
 	    return s_Inf;
@@ -12,8 +12,8 @@ extern "C"
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-// CUtilActionç±»
-// åˆ›å»ºç›®å½•
+// CUtilActionÀà
+// ´´½¨Ä¿Â¼
 bool CUtilAction::CreateDir(const char* dir)
 {
     bool bResult = false;
@@ -33,7 +33,7 @@ bool CUtilAction::CreateDir(const char* dir)
     return bResult;
 }
 
-// ä¿®æ­£éæ³•æ–‡ä»¶åå­—ç¬¦
+// ĞŞÕı·Ç·¨ÎÄ¼şÃû×Ö·û
 const char* CUtilAction::FixFileName(const char* fn)
 {
     const char* pResult = nullptr;

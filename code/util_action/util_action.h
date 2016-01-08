@@ -7,9 +7,9 @@ namespace Example
     public:
         CUtilAction(void) = default;
 
-        // åˆ›å»ºç›®å½•
+        // ´´½¨Ä¿Â¼
 		bool CreateDir(const char*) override;
-        // ä¿®æ­£éæ³•æ–‡ä»¶åå­—ç¬¦
+        // ĞŞÕı·Ç·¨ÎÄ¼şÃû×Ö·û
 		const char* FixFileName(const char*) override;
 
     private:

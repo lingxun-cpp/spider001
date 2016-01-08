@@ -7,6 +7,6 @@ namespace Example
     {
     public:
         // 启动
-		virtual void Run(const char* domain, const char* key, const char* dir) = 0;
+		virtual void Run(const char* domain, const char* key) = 0;
     };
 }
