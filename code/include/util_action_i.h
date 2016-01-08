@@ -10,5 +10,7 @@ namespace Example
 		virtual bool CreateDir(const char*) = 0;
         // 修正非法文件名字符
 		virtual const char* FixFileName(const char*) = 0;
+        // 编码转换
+		virtual const char* ConvertEncoding(const char*, const char* = "GBK", const char* = "UTF-8") = 0;
     };
 }

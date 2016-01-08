@@ -4,7 +4,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 extern "C"
 {
-	IUtilAction& GetWorkInf(const char*)
+	IUtilAction& GetWorkInf(const char* path)
 	{
 	    static CUtilAction s_Inf;
 	    return s_Inf;
@@ -52,4 +52,12 @@ const char* CUtilAction::FixFileName(const char* fn)
         pResult = m_result.c_str();
     }
     return pResult;
+}
+
+// ±àÂë×ª»»
+const char* CUtilAction::ConvertEncoding(const char* srcStr, const char* dstEncd, const char* srcEncd)
+{
+    m_result = srcStr;
+    m_result = locale::conv::between(m_result, dstEncd, srcEncd);
+    return m_result.c_str();
 }

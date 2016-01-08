@@ -39,7 +39,6 @@
 			<Add directory="../../boost_1_58" />
 		</Compiler>
 		<Linker>
-			<Add option="-static-libstdc++" />
 			<Add library="../../boost_1_58/lib/libboost_system.a" />
 			<Add library="../../boost_1_58/lib/libboost_date_time.a" />
 		</Linker>
