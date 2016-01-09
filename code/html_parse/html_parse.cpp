@@ -1,6 +1,5 @@
 #include "std.h"
 #include "html_p.h"
-using namespace Example;
 
 extern "C"
 {

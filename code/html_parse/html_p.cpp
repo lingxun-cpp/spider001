@@ -1,9 +1,4 @@
-#include <iostream>
-#include <regex>
 #include "std.h"
-#include "html_p.h"
-using namespace std;
-using namespace Example;
 
 // 获取标题
 const char* html_p::ParseTitle(const char* s, int)
