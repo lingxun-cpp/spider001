@@ -1,7 +1,10 @@
 #pragma  once
-
+#include <string>
+#include <list>
+#include <map>
 #include "base_i.h"
 #include "url_manager_i.h"
+using namespace std;
 
 namespace Example
 {
@@ -19,6 +22,11 @@ namespace Example
      const char* GetNextUrl(void) override;// 获取下条链接
 
      const char* GetUrlSrvName(const char*) override;// 获取链接对应的服务器名
+   private:
+     string ss;//保存域名
+     list<string> listvariable;
+     int listcount;
+     map<string,int> mapbackup;
 
 
   };
