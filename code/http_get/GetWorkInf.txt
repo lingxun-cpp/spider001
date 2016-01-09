@@ -1,0 +1,8 @@
+extern "C"
+{
+	IHttpGet& GetWorkInf(const char* path)
+	{
+	    static CHttpGet s_Inf(GetDLLWorkInf<INetAction>("net_action", path));
+	    return s_Inf;
+	}
+}

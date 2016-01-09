@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1452321427 source:i:\ÁéÑµ¿ÎÌÃÑµÁ·\pacong\trunk\code\http_get\http_get.cpp
+	"std.h"
+	"http_get.h"
+
+1452320483 i:\ÁéÑµ¿ÎÌÃÑµÁ·\pacong\trunk\code\http_get\std.h
+	<sstream>
+	<string>
+	<stdexcept>
+	<iostream>
+	<iomanip>
+	"load_library.h"
+	"base_i.h"
+	"util_i.h"
+	"util_action_i.h"
+	"spider_main_i.h"
+	"net_action_i.h"
+
+1452314886 i:\ÁéÑµ¿ÎÌÃÑµÁ·\pacong\trunk\code\include\load_library.h
+	<windows.h>
+	<dlfcn.h>
+	<string>
+	<ctime>
+
+1452306179 i:\ÁéÑµ¿ÎÌÃÑµÁ·\pacong\trunk\code\include\base_i.h
+
+1452306179 i:\ÁéÑµ¿ÎÌÃÑµÁ·\pacong\trunk\code\include\util_i.h
+	<string>
+	<stdexcept>
+	"load_library.h"
+
+1452306179 i:\ÁéÑµ¿ÎÌÃÑµÁ·\pacong\trunk\code\include\util_action_i.h
+
+1452306179 i:\ÁéÑµ¿ÎÌÃÑµÁ·\pacong\trunk\code\include\spider_main_i.h
+
+1452320956 i:\ÁéÑµ¿ÎÌÃÑµÁ·\pacong\trunk\code\http_get\http_get.h
+	"http_get_i.h"
+
+1452318302 i:\ÁéÑµ¿ÎÌÃÑµÁ·\pacong\trunk\code\include\http_get_i.h
+
+1452306179 i:\ÁéÑµ¿ÎÌÃÑµÁ·\pacong\trunk\code\include\net_action_i.h
+
+1452320403 source:i:\ÁéÑµ¿ÎÌÃÑµÁ·\pacong\trunk\code\http_get\http_get_i.cpp
+	"std.h"
+	"http_get.h"
+
