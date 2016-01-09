@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1452312222 source:d:\daima\trunk\code\html_parse\html_p.cpp
+	"std.h"
+	"html_p.h"
+
+1452312058 d:\daima\trunk\code\html_parse\std.h
+	"base_i.h"
+	"html_parse_i.h"
+
+1452306131 d:\daima\trunk\code\include\base_i.h
+
+1452306131 d:\daima\trunk\code\include\html_parse_i.h
+
+1452312339 d:\daima\trunk\code\html_parse\html_p.h
+
+1452312251 source:d:\daima\trunk\code\html_parse\html_parse.cpp
+	"std.h"
+	"html_p.h"
+
