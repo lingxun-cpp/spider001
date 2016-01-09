@@ -45,5 +45,12 @@ const char* urlclass::GetNextUrl(void)// 获取下条链接
 
 const char* urlclass::GetUrlSrvName(const char* name)// 获取链接对应的服务器名
 {
-
+    static string sname = name;
+    unsigned int iTail = sname.find("//");
+    if (iTail != string::npos)
+        sname = sname.substr(iTail, sname.size() - iTail);
+    iTail = sname.find("/");
+    if (iTail != string::npos)
+        sname = sname.substr(0, iTail);
+  return sname.c_str();
 }
