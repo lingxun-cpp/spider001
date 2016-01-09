@@ -15,7 +15,7 @@ const char* html_p::ParseTitle(const char* s, int)
 }
 
 // 获取链接
-void html_p::ParseUrl(const char*, const char* s, int, IAddUrl&)
+void html_p::ParseUrl(const char*, const char* s, int, IAddUrl& url)
 {
     string str = s;
     regex pattern("href=('|\")(http://)?(\\w+\\.)*(\\w*/)*",regex::icase);
@@ -24,11 +24,12 @@ void html_p::ParseUrl(const char*, const char* s, int, IAddUrl&)
         string msg = it->str();
         msg = msg.substr(5, msg.size() -6);
         cout <<msg<<endl;
+        url.AddUrl(msg.c_str(),msg.size());
     }
 }
 
 // 获取图片
-void html_p::ParseImg(const char*, const char* s, int, IAddUrl&)
+void html_p::ParseImg(const char*, const char* s, int, IAddUrl& pic)
 {
     string str = s;
     regex pattern("src=('|\")(http://)?(\\w+\\.)*(\\w*/)*\\w+\\.(jpg|png|gif)('|\")",regex::icase);
@@ -37,6 +38,7 @@ void html_p::ParseImg(const char*, const char* s, int, IAddUrl&)
         string msg = it->str();
         msg = msg.substr(5, msg.size() -6);
         cout <<msg<<endl;
+        pic.AddUrl(msg.c_str(),msg.size());
     }
 }
 
