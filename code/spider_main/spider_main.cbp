@@ -35,7 +35,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="D:/src/spider/spider/trunk/code/spider_main/" />
+			<Add option="-DWIN32" />
+			<Add directory="../include" />
 		</Compiler>
 		<Unit filename="inf_main.cpp" />
 		<Unit filename="inf_run.cpp" />

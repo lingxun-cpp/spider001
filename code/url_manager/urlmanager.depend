@@ -1,15 +1,1 @@
 # depslib dependency file v1.0
-1452316485 source:e:\wxy\spider\trunk\code\url_manager\main.cpp
-	"url_p.h"
-
-1452316961 e:\wxy\spider\trunk\code\url_manager\url_p.h
-	"base_i.h"
-	"url_manager_i.h"
-
-1452305853 e:\wxy\spider\trunk\code\include\base_i.h
-
-1452305853 e:\wxy\spider\trunk\code\include\url_manager_i.h
-
-1452316997 source:e:\wxy\spider\trunk\code\url_manager\url_p.cpp
-	"url_p.h"
-

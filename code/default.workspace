@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="test8/test8.cbp" />
+		<Project filename="spider_main/spider_main.cbp" />
+		<Project filename="url_manager/urlmanager.cbp" />
+		<Project filename="http_get/http_get.cbp" />
+		<Project filename="html_parse/html_parse.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
