@@ -1,4 +1,5 @@
 #include "std.h"
+#include "html_p.h"
 
 // 获取标题
 const char* html_p::ParseTitle(const char* s, int)
@@ -12,6 +13,7 @@ const char* html_p::ParseTitle(const char* s, int)
         cout <<msg<<endl;
         return msg.c_str();
     }
+    return nullptr;
 }
 
 // 获取链接
