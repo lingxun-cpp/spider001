@@ -35,8 +35,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="../include" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="html_p.cpp" />
+		<Unit filename="html_p.h" />
+		<Unit filename="html_parse.cpp" />
+		<Unit filename="std.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
