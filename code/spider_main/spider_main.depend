@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1452317016 source:d:\src\spider\spider\trunk\code\spider_main\inf_main.cpp
+	"std.h"
+	"inf_run.h"
+
+1452318826 d:\src\spider\spider\trunk\code\spider_main\std.h
+	<string>
+	<stdexcept>
+	<iostream>
+	<iomanip>
+	"load_library.h"
+	"base_i.h"
+	"util_i.h"
+	"util_action_i.h"
+	"spider_main_i.h"
+	"url_manager_i.h"
+	"http_get_i.h"
+	"html_parse_i.h"
+	"net_action_i.h"
+	"file_down_i.h"
+
+1452308246 d:\src\spider\spider\trunk\code\include\load_library.h
+	<windows.h>
+	<dlfcn.h>
+	<string>
+	<ctime>
+
+1452308246 d:\src\spider\spider\trunk\code\include\base_i.h
+
+1452308246 d:\src\spider\spider\trunk\code\include\util_i.h
+	<string>
+	<stdexcept>
+	"load_library.h"
+
+1452308246 d:\src\spider\spider\trunk\code\include\util_action_i.h
+
+1452308246 d:\src\spider\spider\trunk\code\include\spider_main_i.h
+
+1452308246 d:\src\spider\spider\trunk\code\include\url_manager_i.h
+
+1452308246 d:\src\spider\spider\trunk\code\include\http_get_i.h
+
+1452308246 d:\src\spider\spider\trunk\code\include\html_parse_i.h
+
+1452308246 d:\src\spider\spider\trunk\code\include\net_action_i.h
+
+1452308246 d:\src\spider\spider\trunk\code\include\file_down_i.h
+
+1452320355 d:\src\spider\spider\trunk\code\spider_main\inf_run.h
+
