@@ -6,5 +6,6 @@
 		<Project filename="url_manager/urlmanager.cbp" />
 		<Project filename="http_get/http_get.cbp" />
 		<Project filename="html_parse/html_parse.cbp" />
+		<Project filename="file_down/file_down.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

@@ -4,7 +4,7 @@
 extern "C"
 {
     // A function adding two integers and returning the result
-    ISpiderMain& GetDLLWorkInf(const char* path_input)
+    ISpiderMain& GetWorkInf(const char* path_input)
     {
         static Inf_run obj(path_input);
         return obj;

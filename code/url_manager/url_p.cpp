@@ -5,6 +5,7 @@ using namespace Example;
 
 bool urlclass::AddUrl(const char* addurl, int i)// 添加链接接口 i为宽度
 {
+    cout << addurl << endl;
     string sss = addurl;
     if (sss.find(ss) != string::npos)
     {
@@ -26,11 +27,21 @@ bool urlclass::AddUrl(const char* addurl, int i)// 添加链接接口 i为宽度
  }
 }
 
+bool urlclass::AddUrlFirst(const char* addurl, int)
+{
+    string sss = addurl;
+     if (mapbackup.find(sss) == mapbackup.end())
+     {
+       mapbackup.insert(make_pair(sss,mapbackup.size()));
+       listvariable.push_back(sss);
+     }
+}
+
 bool urlclass::SetDomain(const char* domain)// 设置域名
 {
 
-   ss = string("www.") + domain;
-   AddUrl(ss.c_str(),1);
+   ss = string("http://www.") + domain + "/";
+   AddUrlFirst(ss.c_str(),1);
    return  true;
 
 
@@ -38,8 +49,12 @@ bool urlclass::SetDomain(const char* domain)// 设置域名
 
 const char* urlclass::GetNextUrl(void)// 获取下条链接
 {
-    static string cc = listvariable.front();
-    listvariable.pop_front();
+    static string cc;
+    if (listvariable.size() > 0)
+    {
+        cc = listvariable.front();
+        listvariable.pop_front();
+    }
     return cc.c_str();
 }
 

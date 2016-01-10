@@ -24,7 +24,7 @@ void html_p::ParseUrl(const char*, const char* s, int, IAddUrl& url)
     for (sregex_iterator it(str.cbegin(), str.cend(), pattern), end_it; end_it != it; ++it)
     {
         string msg = it->str();
-        msg = msg.substr(5, msg.size() -6);
+        msg = msg.substr(6, msg.size() -6);
         cout <<msg<<endl;
         url.AddUrl(msg.c_str(),msg.size());
     }

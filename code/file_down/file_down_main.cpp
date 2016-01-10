@@ -5,7 +5,7 @@
 extern "C"
 {
     // A function adding two integers and returning the result
-    IFileDown& GetDLLWorkInf(const char* path_input)
+    IFileDown& GetWorkInf(const char* path_input)
     {
         static Ifile_down obj(path_input);
         return obj;
