@@ -6,7 +6,7 @@ namespace Example
     class IHttpGet : public IBase
     {
     public:
-        // ÇëÇóÍøÒ³
-		virtual const char* SyncHttpGet(int& len, const char* domain, const char* path) = 0;
+    // ÇëÇóÍøÒ³
+    virtual const char* SyncHttpGet(int& len, const char* domain, const char* path) = 0;
     };
 }
